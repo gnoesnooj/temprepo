@@ -1,7 +1,6 @@
 package com.ssafy.trip.util;
 
 import com.ssafy.trip.model.dto.FestivalDto;
-import com.ssafy.trip.model.dto.TripDto;
 import java.util.ArrayList;
 import java.util.List;
 import org.xml.sax.Attributes;

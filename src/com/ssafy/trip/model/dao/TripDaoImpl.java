@@ -15,9 +15,6 @@ public class TripDaoImpl implements TripDao {
 		loadData();
 	}
 
-	/**
-	 * 관광지 정보를 xml 파일에서 읽어온다.
-	 */
 	@Override
 	public void loadData() {
 		TouristDestinationSAXParser parser = new TouristDestinationSAXParser();
@@ -28,8 +25,8 @@ public class TripDaoImpl implements TripDao {
 	public List<TripDto> searchAll(TripSearchDto tripSearchDto) {
 		List<TripDto> finds = new LinkedList<TripDto>();
 
-		String touristDestination = tripSearchDto.getTouristDestination(); // 관광지
-		String sido = tripSearchDto.getSido(); // 주소
+		String touristDestination = tripSearchDto.getTouristDestination();
+		String sido = tripSearchDto.getSido();
 		if (touristDestination != null) {
 			for (TripDto trip : tripInfo) {
 				if (trip.getTouristDestination().contains(touristDestination)) {

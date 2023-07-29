@@ -7,7 +7,7 @@ import javax.xml.parsers.SAXParserFactory;
 
 public class FestivalSAXParser {
 
-    private List<FestivalDto> festivalDtos; // 여기 들어있는거같은디
+    private List<FestivalDto> festivalDtos;
 
     private int size;
 

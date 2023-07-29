@@ -1,7 +1,6 @@
 package com.ssafy.trip.model.dao;
 
 import com.ssafy.trip.model.dto.FestivalDto;
-import com.ssafy.trip.model.dto.TripDto;
 import com.ssafy.trip.util.FestivalSAXParser;
 import java.util.LinkedList;
 import java.util.List;
