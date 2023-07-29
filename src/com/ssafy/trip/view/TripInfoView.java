@@ -119,9 +119,6 @@ public class TripInfoView {
 		Image changeImage = image.getScaledInstance(570, 470, Image.SCALE_SMOOTH);
 		ImageIcon changeIcon = new ImageIcon(changeImage);
 		imgL.setIcon(changeIcon);
-
-		festivalBt.addActionListener(e -> new FestivalView(curTrip)); // ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
-		commerceBt.addActionListener(e -> new CommerceView());
 	}
 
 	/** 메인 화면인 관광지 목록을 위한 화면 셋팅하는 메서드 */
@@ -198,6 +195,8 @@ public class TripInfoView {
 		mainP.setBorder(BorderFactory.createEmptyBorder(20, 10, 10, 10));
 		frame.add(mainP, "Center");
 
+		festivalBt.addActionListener(e -> new FestivalView(curTrip)); // ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+		commerceBt.addActionListener(e -> new CommerceView());
 		tripTable.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
@@ -210,6 +209,7 @@ public class TripInfoView {
 		// complete code #01
 		// 아래의 코드를 참조하여 아래 라인을 uncomment 하고 searchBt.addActionList() 를 Lambda 표현식으로 바꾸세요.
 		searchBt.addActionListener(e -> searchTrips());
+
 
 		showTrips();
 	}
